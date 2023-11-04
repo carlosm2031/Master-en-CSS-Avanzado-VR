@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit; }
+
+p a {
+  display: inline; }
+
+img, video, iframe, picture, figure {
+  max-width: 100%;
+  display: block; }
+
+form, input, select, textarea, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  color: inherit; }
+
+/*DEFINICIÓN VARIABLES*/
+/*ESTILOS GENERALES*/
+html {
+  font-size: 10px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color: #F2F7F9;
+  color: #555;
+  overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222222; }
+
+/*IMAGEN DE FONDO*/
+body {
+  background-image: url("../img/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -20px -120px; }
+
+/*ESTRUCTURA PRINCIPAL*/
+.layout {
+  position: relative;
+  min-width: 1290px;
+  width: 75%;
+  height: 80vh;
+  min-height: 80vh;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-areas: "aside contentt";
+  grid-template-columns: 30% 70%;
+  /*Sombra detras del layout*/
+  border-radius: 4rem;
+  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25); }
+
+/*BARRA LATERAL AZUL*/
+.layout__aside {
+  grid-area: aside;
+  border-radius: 4rem 0 0 4rem;
+  overflow: auto;
+  overflow-x: hidden; }
+
+.aside__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
+  min-width: 30rem;
+  background-color: #04B4E0;
+  color: #FFFFFF; }
+
+.user-info__container-image {
+  position: relative;
+  display: inline-block;
+  width: 18rem;
+  margin-top: 7rem;
+  z-index: 1; }
+
+.user-info__image {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 20rem; }
+
+.user-info__container-image::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 9%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-size: 0.6rem 0.6rem; }
+
+/*CONTENEDOR PRINCIPAL*/
+.layout__content {
+  grid-area: contentt; }
+
+/*# sourceMappingURL=style.css.map */
