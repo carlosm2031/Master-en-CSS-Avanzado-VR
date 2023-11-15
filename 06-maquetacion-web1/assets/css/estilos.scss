@@ -1,4 +1,6 @@
 @import 'reset';
+@import 'sobre-mi';
+@import 'scrollBar';
 
 /*DEFINICIÓN VARIABLES*/
 
@@ -192,24 +194,33 @@ body{
 /*CONTENEDOR PRINCIPAL*/
 .layout__content{
     grid-area: contentt;
-    
-    min-height: 100%;
     height: 100%;
+    min-height: 100%;
     background-color: $color-secondary;
     border-radius:0 10rem 10rem 0 ;
 }
 
 .content__page{
-    min-height: 100%;
     background-color: $color-principal;
     border-radius:3.2rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     gap: 3rem;
+    height: 100%;
+}
+
+.content__about{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    display: block ;
+    height: 100%;
+    padding: 6rem;
+    padding-right: 3rem;
+    overflow: auto;
 }
 
 .page__name{
@@ -222,7 +233,7 @@ body{
     font-weight: lighter;
     color: $color-subtitle;
 }
-/*MENI NAVEGACION LATERAL*/
+/*MENU NAVEGACION LATERAL*/
 
 .layout__menu{
     display: block;
@@ -235,12 +246,10 @@ body{
 
 .menu__list{
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
     margin-left: 2.5rem;
     width: 60%;
     min-height: 32rem;
@@ -283,3 +292,8 @@ body{
     opacity: 1;
     right: 100%;
 }
+
+
+@import 'clientes';
+@import 'precios';
+@import 'extra';

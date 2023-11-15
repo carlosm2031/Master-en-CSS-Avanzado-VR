@@ -1,0 +1,54 @@
+$color-scrollbar:#D3D3D3;
+$color-background-scrollbar:#eee;
+
+$color-principal:#FFFFFF;
+$color-secondary: #04B4E0;
+
+.content__page::-webkit-scrollbar {
+    width: 25px;  
+    background-color: transparent;   /* Tamaño del scroll en vertical */
+}
+
+.content__page::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+
+.content__page:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px $color-scrollbar;
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px $color-secondary;
+}
+.content__page::-webkit-scrollbar-track{
+    margin: 40px 0;
+}
+
+/*Barra info*/
+.layout__aside::-webkit-scrollbar {
+    width: 25px;  
+    background-color: $color-secondary;
+}
+
+.layout__aside::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+
+.layout__aside:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px $color-principal;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px $color-principal;
+}
+.layout__aside::-webkit-scrollbar-track{
+    margin: 40px 0;
+}
