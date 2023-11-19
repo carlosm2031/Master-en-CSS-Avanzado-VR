@@ -33,7 +33,8 @@ $color-company:#A5A6A7;
     margin-right: 0rem;
 }
 
-.prices__box:hover{
+.prices__box:hover,
+.extra__info:hover{
     box-shadow: 0px 18px 24px -5px rgba(0,0,0,0.15);
     transform: translateY(-1rem);
 }

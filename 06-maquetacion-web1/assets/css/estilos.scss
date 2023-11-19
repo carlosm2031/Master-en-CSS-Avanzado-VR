@@ -1,5 +1,5 @@
 @import 'reset';
-@import 'sobre-mi';
+
 @import 'scrollBar';
 
 /*DEFINICIÓN VARIABLES*/
@@ -259,11 +259,7 @@ body{
     border-radius: 6rem;
 }
 
-.menu__icon{
-    color: $color-icons;
-    font-size: 2.8rem;
-    transition: all 300ms ease-in-out;
-}
+
 
 .menu__option{
     display: block;
@@ -271,10 +267,20 @@ body{
     text-align: center;
 }
 
+.menu__icon{
+    color: $color-icons;
+    font-size: 2.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+
+
 .menu__icon:hover{
     color: $color-secondary;
 }
-
+.menu__link--active:active{
+    color: $color-secondary;
+}
 .menu__overlay{
     position: absolute;
     right: 0;
@@ -293,7 +299,10 @@ body{
     right: 100%;
 }
 
-
+@import 'sobre-mi';
 @import 'clientes';
 @import 'precios';
 @import 'extra';
+@import 'curriculum';
+@import 'portafolio';
+@import 'blog';

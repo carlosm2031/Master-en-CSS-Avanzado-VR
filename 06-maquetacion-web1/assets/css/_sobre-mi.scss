@@ -17,16 +17,38 @@ $color-border-reviews:#E5E6E7;
 $color-company:#A5A6A7;
 
 /*SOBRE MÍ*/
-.about__header{
+
+.content__about,
+.content__resume,
+.content__portfolio,
+.content__blog{
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 6rem;
+    padding-right: 3rem;
+    overflow: auto;
+}
+
+.about__header,
+.resume__header,
+.portfolio__header,
+.blog__header{
     display: inline-block;
     margin-bottom:4.5rem;
 }
 
-.about__title{
+.about__title,
+.resume__title,
+.portfolio__title,
+.blog__title{
     font-size: 3.2rem;
     position: relative;
 }
-.about__title::after {
+.about__title::after,
+.resume__title::after,
+.portfolio__title::after,
+.blog__title::after{
     content: "";
     position: absolute;
     top: 20px;
@@ -38,7 +60,8 @@ $color-company:#A5A6A7;
     opacity: 0.5;
 }
 
-.title__color{
+.title__color,
+.subtitle__color{
     color: $color-secondary;
 }
 
@@ -91,7 +114,8 @@ $color-company:#A5A6A7;
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header{
+.extra__header,
+.resume__subheader{
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
@@ -103,14 +127,17 @@ $color-company:#A5A6A7;
 .reviews__title,
 .clients__title,
 .prices__title,
-.extra__title{
+.extra__title,
+.resume__subtitle{
     font-size: 2.1rem;
 }
+
 .services__title::after,
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after{
+.extra__title::after,
+.resume__subtitle::after{
     content: "";
     position: absolute;
     top: 15px;
